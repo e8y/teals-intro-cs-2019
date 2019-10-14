@@ -1,0 +1,146 @@
+<!--
+This is a standalone presentation. You can distribute this single file
+and open it in a web browser, and it will render properly as long as 
+you have Internet connectivity.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Inputs &amp; Conditionals</title>
+
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reset.css">
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reveal.css">
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/teals/css/theme/teals.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/highlightjs/src/styles/vs.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'https://tomocafe.github.io/reveal-teals/revealjs/css/print/pdf.css' : 'https://tomocafe.github.io/reveal-teals/revealjs/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- TITLE SLIDE -->
+                <section>
+                    <h2>Inputs &amp; Conditionals</h2>
+                    <small>
+                        Mr. Wegley &mdash; Monday, October 14, 2019
+                    </small>
+                </section>
+
+                <!-- HOOK -->
+                <section>
+                    <h2>Want to make more interesting programs?</h2>
+                    <p>So far, only a few ways to interact with our programs...</p>
+                </section>
+
+                <section id="fragments">
+                    <h2>Introducing...</h2>
+                    <p>
+                        <span style="display: inline-block;" class="fragment fade-right">Inputs</span> <span style="display: inline-block;" class="fragment fade-up">&amp; Conditionals</span>
+                    </p>
+                </section>
+
+                <section data-background-iframe="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=lesson2-3-demo&noRun" data-background-interactive></section>
+                
+                <!-- LESSON -->
+
+                <section>
+                    <section id="fragments">
+                        <h2>Inputs</h2>
+                        <p><code>ask [] and wait</code> block</p>
+                        <p>Asks a question, and waits for a response from the keyboard</p>
+                        <p class="fragment">But where does the response get stored?</p>
+                        <p class="fragment">In the <em><code>answer</code></em> block!</p>
+                    </section>
+                    <section data-background-iframe="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=sandbox&editMode&noRun" data-background-interactive></section>
+                    <section id="fragments">
+                        <h2>Inputs</h2>
+                        <p>What happens if I ask for 2 inputs in a row, can I get the <code>answer</code> to the first question?</p>
+                        <p class="fragment">No!</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section id="fragments">
+                        <h2>Conditionals</h2>
+                        <p>Most programs don't do the exact same thing every time</p>
+                        <p class="fragment">They do different things based on different inputs!</p>
+                        <p class="fragment">Snap<em>!</em> conditional blocks: <code>if</code> and <code>if-else</code></p>
+                    </section>
+                    <section data-background-iframe="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=sandbox&editMode&noRun" data-background-interactive></section>
+                </section>
+
+                <section>
+                    <h2>Warm-Up Activity</h2>
+                    <ol>
+                        <li>Go to <u><code>bit.ly/lesson23</code></u></li>
+                        <li>Put the blocks together to make the program work like the demo</li>
+                    </ol>
+                    <div>
+                        <br>
+                        <small>
+                            When the parrot asks, <q>What's your name?</q>, if you type your name, it should say <q>Welcome!</q> and broadcast <code>unlock</code>; otherwise it should say <q>You're not invited...</q>
+                        </small>
+                    </div>
+                </section>
+
+                <section>
+                    <section id="fragments">
+                        <h2>Lab 2.3: What Shape is That?</h2>
+                        <p>Ask for a number of sides, then say what kind of shape it is</p>
+                        <p class="fragment">Part 1: is it a triangle, or not...</p>
+                        <p class="fragment">Part 2: shapes with 3-6 sides</p>
+                        <p class="fragment">Part 3: further classifying 4-sided shapes (tomorrow)</p>
+                    </section>
+                    <section data-background-iframe="https://snap.berkeley.edu/snapsource/snap.html#present:Username=mr_wegley&ProjectName=lab2-3-part2&noRun" data-background-interactive></section>
+                </section>
+
+                <section>
+                    <section id="fragments">
+                        <h2>Next Steps</h2>
+                        <p><em>Before starting to code... (!)</em></p>
+                        <ol>
+                            <li class="fragment">In your table group, find a space at the whiteboard</li>
+                            <li class="fragment">Write a flowchart or pseudocode for Lab 2.3 together</li>
+                            <li class="fragment">Raise your hands for one of us to come check it</li>
+                            <li class="fragment">If all OK, take a picture, or copy it down on paper</li>
+                            <li class="fragment">Then start coding! (individually)</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>Flowchart Example</h2>
+                        <img class="plain" height="500" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUEAAAEtCAYAAACWONIQAAAFj3RFWHRteGZpbGUAJTNDbXhmaWxlJTIwaG9zdCUzRCUyMnd3dy5kcmF3LmlvJTIyJTIwbW9kaWZpZWQlM0QlMjIyMDE5LTEwLTE0VDA1JTNBMDAlM0EzMi4wMDhaJTIyJTIwYWdlbnQlM0QlMjJNb3ppbGxhJTJGNS4wJTIwKFgxMSUzQiUyMExpbnV4JTIweDg2XzY0KSUyMEFwcGxlV2ViS2l0JTJGNTM3LjM2JTIwKEtIVE1MJTJDJTIwbGlrZSUyMEdlY2tvKSUyMENocm9tZSUyRjc2LjAuMzgwOS4xMzIlMjBTYWZhcmklMkY1MzcuMzYlMjIlMjBldGFnJTNEJTIyam8ybDNzNWh4UzRkemlBc1RESFUlMjIlMjB2ZXJzaW9uJTNEJTIyMTIuMS4wJTIyJTIwdHlwZSUzRCUyMmRldmljZSUyMiUyMHBhZ2VzJTNEJTIyMSUyMiUzRSUzQ2RpYWdyYW0lMjBpZCUzRCUyMkcxQVhFNnNvRlVQb0pxQ1M4RDdWJTIyJTIwbmFtZSUzRCUyMlBhZ2UtMSUyMiUzRTVWZGRiOW93RlAwMTBaNktrcGlFdmdKdHQwcGo2c1JEeDZOSjNDU3FZMmUyQTRGZlB5ZXg4MlVRRE5GUmFTJTJGZ2UyMWYlMkI1NXpjaUFXbUtmRlZ3YXplRUZEaEMzWERnc0xQRml1ZSUyQiUyQk41V2VaMk5XSnNUZXBFeEZMd2pybHRJbGxza2NxYWF0c25vU0k5eFlLU3JGSXNuNHlvSVNnUVBSeWtERzY3Uzk3bzdoJTJGYWdZalpDU1dBY1JtOWpVSlJhemJzdHY4TjVSRXNUN1pzZFZNQ3ZWaWxlQXhET20ya3dLUEZwZ3pTa1U5U29zNXdpVjJHcGQ2MzlPUjJlWmlEQkZ4em9iRmJNSGRQQVBQUDclMkZEJTJGZjZGY0VEV2Q2cktCdUpjTlR6bDd4Vk9USDRTbUNKMWViSFRpRENha3hDVlJXMEx6TFp4SXRBeWcwRTV1NVVTa0xsWXBGaEdqaHklMkJVU0lVcVk3c2VLYU9RMHlnNG1nZlRvT09WQldpS1JKc0o1Zm9EUnBRclNnVmJsdDZtaVZ4aHhwZjVhQlNSTlJVYmtHVEE0WGJYMkRvR2hnJTJCODFLbU1Xb2c5R0ZhQWtQV1BLdEE4TEc4MUd6TmVzajZ2JTJGTlNDeFZtZDd3Q2JTb1hPRzVXMUp2VXZCeEY1ZmVPNWt6MjhtUXlGTk4wbmZOUHdZN2puVW5QJTJGVWZSQXd4NkRNQVFDYWVsVjhnb3dKRHpKT2pqaElwRSUyRkNvRlAlMkZKVXRPck1QQlRxV2FpQ25RNkl2SHhuVXhtdXVuUHR0aXJTJTJCdzV6Z2tMRHBnYU15SWFrSGdKMCUyQm1FWGtFVkluQksweVhDSFFlOEFnVHJIRUlZaTJmU3ZlNGhWZGNJTFRXUWpSd1VFN0lFdzZqYlZycTdmRFF0TiUyQm9XYUMlMkJwQ05RNUdvVXBrVGR1WDYyNXM2RzRKU3hqYkIlMkZrVjRZQlc5dEE4MlRZazRaWHNZYzBvREFQSVJlJTJGTW5HQWF2SGRYZjNKN2I0emhadjd1blNSeVJmTXZySEo3R1Y2SHZZUnNKUExoYURUNnhGeUJvZG43dCUyQmJLTjdqNlFTJTJCMmV6MWU5YXolMkZsTjMzekw3MSUyRm45djklMkI2WmR1JTJGZDB1NmJPc2RjJTJCbHk3YjM0bmRLSGg3OFlIMiUyRjNFVU41S3ZyZjhwJTJGODB6cFhlJTJCSmJTQTg3Z240WjdxZlQ4Z2ZRbTE1S2VETnNYeEhwNSUyQjVZTkh2OEElM0MlMkZkaWFncmFtJTNFJTNDJTJGbXhmaWxlJTNF+FKOiQAAIABJREFUeF7tnQncTdX+xn8yjyFl6s81hmtKaFKmMidUphRRGZpMmccyD0USmctQiEK4hgxxTa9QXKRJ6pYyz7zE//Os7Pcex3vGffbZe6/9rM+nDu+799prPb+1vudZa6+1pBCRa8KkuwIpdK8g60cFolUAnePatWvkYLQCOv2+FCkU/whBpweK5bNNAULQNunj82BCMD468ynuVYAQdG/swio5IRiWTLzIwwoQgpoHnxDUPMCsnmkFCEHTEjo7A0LQ2fFh6exXgBC0PwaWloAQtFReZq6BAoSgBkEMVgVCUPMAs3qmFSAETUvo7AwIQWfHh6WzXwFC0P4YWFoCQtBSeZm5BgoQghoEkcNhzYPI6lmqACFoqbz2Z04naH8MWAJnK0AIOjs+pktHCJqWkBlorgAhqHuAuXdY8wizemYVIATNKujw++kEHR4gFs92BQhB20NgbQEIQWv1Ze7uV4AQdH8Mg9aAENQ8wKyeaQUIQdMSOjsDQtDZ8WHp7FeAELQ/BpaWgBC0VF5mroEChKAGQQxWBUJQ8wCzeqYVIARNS+jsDAhBZ8eHpbNfAULQ/hhYWgJC0FJ5mbkGChCCGgSRw2HNg8jqWaoAIWipvPZnTidofwxYAmcrQAg6Oz6mS0cImpaQGWiuACGoe4C5d1jzCLN6ZhUgBM0q6PD76QQdHiAWz3YFtIDgb7/9Ji1btpTjx4/L0KFDpUaNGrYL65QCEIJOiQTL4VQF4g7Btm3byqRJk2Tfvn1SrFixkLqgE1+7di3odYMGDZLTp0/LiBEj5MqVK5IqVaqQ+XrlAkLQK5FmPaNVIK4QvHz5suTJk0cqVKggFStWlAEDBoQsdzgQ7NChg5QqVUrat28fMj+vXUAIei3irG+kCsQVgkuXLlXD1X79+smrr74q+/fvV+W9evWqAtiaNWuU62vcuLEMGTJE/c6A4J9//ilVqlSR0aNHS+3atZPqCVfZp08fSZ8+vVSrVk2mT58uy5Ytk169eilXmD17dpk4caKUKFFC1q1bJ927d5fy5cvL4sWLZdWqVTe4Ufy+b9++UrNmTZkwYYKkSZNGlixZIiVLllSfvXv3VmUFzHFdixYtkso4Y8YMVQ6Ud/78+TJy5Ej1PFwzZswYdd2CBQtk2LBh6s9ZsmSRmTNnqi8FKxMhaKW6zFsHBeIKQQABLvCll16SnDlzyurVq+Xuu++WhIQEwTB5x44dcvHiRQVDgA4dGP+dPXtWqlevLp06dZImTZrcpHu7du2kbNmygs8TJ05I0aJFZePGjXLXXXfJnDlzFIS2bdumoNSoUSNZuHChAqp/wu/r168vY8eOVXOMPXv2VJcMHz5cDd9Tp04thQsXVn+uXLmyAMwGqAcOHCjdunVTZVy7dq3Mnj1bXYt6okwXLlyQcuXKyc6dOyVbtmwK5ocOHVLPsjIRglaqy7x1UCBuEAQEcuXKJXv37pW8efNKmzZtJEeOHAowJ0+eVHCsVKmSgl+9evUkQ4YMSYCpVauW3HPPPYK5v+SSLwTXr1+vYLR161Z1KdwgXOKZM2dky5YtaggO2CWX8HPf30+ePFnBE5+A8/jx4xWoAT8A3Jir9B2yw+keO3ZMRo0apR5x2223yYEDB2TPnj3SoEEDKVOmjPo58oM7nTZtmqXtiBC0VF5mroECcYPgvHnzpHnz5pIpU6YkOAEQBw8eVG4PkFy+fLkadgJWu3btkrRp06rftWrVSjk7gA3DW//kC0GArEePHioPA4Lp0qVTbjJSCE6ZMkXdg084Qwxhu3btKrlz51ZlSw6CGO4ePXo0CYIAPYb9u3fvVnCG641nIgTjqTaf5UYF4gbBhg0bqqUrxssLzK3deeed8sknnyhHtHnzZuUC4dyKFCminFahQoWS5gQBF4AQkLzesZP09oUglslgOIz8kM/cuXMVkAAff6fnHzD/3/tCEE508ODBAleKPJs2bRoRBFFmDI83bdokxYsXl5UrV0r+/PnVkN3KRAhaqS7z1kGBuEDw1KlT6gXATz/9JHfccUeSbh07dpS//vpLvShp3bq1GjamTJlS6tatq14sIBlDTbguQLRq1arqpYdv8oUgfr5o0SKVJ4CK+Te8GMHLDTMQxMsOzPfBBTZr1ky6dOkSEQThCDEX2b9/f0lMTJTMmTOr+UoA28pECFqpLvPWQYG4QFAHodxaB0LQrZFjueOlACEYL6Vteg4haJPwfKxrFCAEXROq6ApKCEanG+/yjgKEoOaxJgQ1DzCrZ1oBQtC0hM7OgBB0dnxYOvsVIATtj4GlJSAELZWXmWugACGoQRCDVYEQ1DzArJ5pBQhB0xI6OwNC0NnxYensV4AQtD8GlpaAELRUXmaugQKEoAZB5HBY8yCyepYqQAhaKq/9mdMJ2h8DlsDZChCCzo6P6dIRgqYlZAaaK0AI6h5g/pObmkeY1TOrACFoVkGH308n6PAAsXi2K0AI2h4CawtACFqrL3N3vwKEoPtjGLQGhKDmAWb1TCtACJqW0NkZEILOjg9LZ78ChKD9MbC0BISgpfIycw0UIAQ1CGKwKhCCmgeY1TOtACFoWkJnZ0AIOjs+LJ39ChCC9sfA0hIQgpbKy8w1UIAQ1CCIHA5rHkRWz1IFCEFL5bU/czpB+2PAEjhbAULQ2fExXTpC0LSEzEBzBRQENa8jqyeCODNRASqQjAJe7ByAvhfrzQ5ABagAIagUIATZFagAFUhSwIuOiBBkB6ACVIAQZBugAlSACkABOkG2AypABTytACHo6fCz8lSAChCCbANUgAp4WgFC0NPhZ+WpABUgBNkGqAAV8LQChKCnw8/KUwEqQAiyDVABKuBpBQhBT4eflacCVIAQZBugAlTA0woQgp4OPytPBagAIcg2QAWogKcVIAQ9HX5WngpQAUKQbYAKUAFPK0AIejr8rDwVoAKEINsAFaACnlaAEPR0+Fl5KkAFCEG2ASpABTytACHo6fCz8lSAChCCbANUgAp4WgFC0NPhZ+WpABUgBNkGqAAV8LQChKCnw8/KUwEqQAiyDVABKuBpBQhBT4eflacCVIAQZBugAlTA0woQgp4OPytPBagAIcg2QAWogKcVIAQ9HX5WngpQAUKQbYAKUAFPK0AIejr8rDwVoAKEINsAFaACnlaAEPR0+Fl5KkAFCEG2ASpABTytACHo6fCz8lSAChCCbANUgAp4WgFC0NPhZ+WpABUgBNkGqAAV8LQCXoDgoyLyiYi8KiIfiMg1EUG9W4rIWBFpLCIrPd0KWHkq4GEFvABBhPeiiFwRkQsikkNEjopIOhFJIyJpPRx/Vp0KeF4Br0Cwh4gMvA49I+iXrv9sqOdbAQWgAh5WwCsQRIjhAuH+fCHo+3cPNwNWnQp4VwEvQdDXDdIFerfNs+ZU4AYFvARBXzcICNIFsjNQASqg3pJ6KRlucICIcC7QS5FnXalAAAW8BsHUIjJZRF4UkUS2CipABaiA1yD4VO7cufv//vvveFM8n+GnAlSACngGgrfffvuKChUqVFy6dGnWunXrnkxISNh25MiRmmwCVIAKeFsB7SGYPn36phcuXPho7ty5Vxo3bpzKCPe8efOuNGnSJFX69OmbXbhw4WNvNwPWngp4VwGtIejr/gKFmK7Qu42fNacCUEBLCAZyf4FCTlfIzkAFvKuAdhAMx/3RFXq3wbPmVMBfAW0gGKn7oytkZ6ACVECb4bAZ90dXyI5ABbytgKudYKzcH12htzsBa+9tBVwLQSvcH12htzsDa+9NBVwHQavdH12hNztCkFrjJHImjRVwFQTj6f7oCjVu9ZFV7dq1a+RgZJK55+oUKVK4Y52gXe6PrtA9jdnCkhKCFoprd9augKAT3B9dod1N1dbnE4K2ym/twx0NQae5P7pCaxujg3MnBB0cHLNFcywEnez+6ArNNjvX3U8Iui5k4RfYcRB0i/ujKwy/kWlwJSGoQRADVcFREHSj+6Mr1Lh3/K9qhKDGYXYEBN3u/ugKNe4hf1eNENQ4xLZDUCf3R1eobU8hBLUNrYhtENTV/dEVatlbCEEtw/p3pWyBoBfcH12hVr2GENQqnDdWJq4Q9Jr7oyvUpucQgtqE8uaKxA2CXnZ/dIWu70GEoOtDGLgClkOQ7i946+G/beKK3kUIuiJM0RXSUgjS/YUfFP6Ld+FrZcOVhKANosfrkZZAkO4vuvDRFUanWxzuIgTjILJdj4g5BOn+zIeSrtC8hjHOgRCMsaBOyi5mEKT7i21Y6Qpjq6fJ3AhBkwI6+faYQJDuz7oQ0xVap20EOROCEYjltktNQZDuLz7hpiuMj85BnkII2h4C6woQNQSjdX8VKlSQb775RrJmzSojR46UZ599NqzaFStWTD777DPBJ1KVKlVkwIAB6tMria7QtkjHFIKHDx+Wtm3bSkJCgvz1119SsWJFGT9+vOTLl890Bd966y1Zs2aNtG/fXjp37izffvut9OvXT7Zv3y7Lli1T+V+8eFEKFiwoCxculPvuuy/iZxrP+PzzzyO+1+wN7dq1k7Jlywo+Y5UihmAs3B+E79Onj9SrVy/sehCCf0tFVxh2k4nlhTGF4PPPPy+33HKLvPfee6qM/fv3l2zZsknXrl1Nl3nWrFnyxRdfKEh06tRJNm3aJKdPn5YCBQrIihUrpHz58jJ27FgFykWLFkX1POMZ06dPj+p+MzfZDsFo3Z9/pX0hePXqVfWthaDgX/Rq3LixDBky5IZbXn31VZk8ebIUKlRIqlWrJu+8845ygE8++SSgILt375YWLVrIuHHj1H0LFiyQYcOGqT9nyZJFZs6cKXny5Lkhz3Xr1knfvn2lZs2aMmHCBEmTJo0sWbJESpYsqT579+4tKNvly5fVdcgfCd8aM2bMUBDHn+fPn68cLfLDNWPGjAm7DGYaA12hGfUivjemEGzQoIGUK1dOOTT/dODAAQEkjx07JpcuXZL69esLnNeqVauke/fusmPHDnXL119/LU2aNJF9+/apdmgkgA4QhNMEBBcvXqx+NXz4cAXEuXPnSuHChWX58uVSqlQpGTp0qOofSGXKlJGJEyfKrbfeqoCcK1euJDCjzK1atRJ8Gs8YMWKEavcoF+CKZ6Gc//nPf0L2P4zijh8/LidPnpSlS5dK8eLF1b3p06eXs2fPSocOHZR7RXrqqadk4MCB8sEHH8jrr7+urrnzzjvl3//+d8SBTO6GsJxgLNyf78N9IYghAQKG4MKmA4a1a9e+IbC4NzknCDHef/99yZgxo/zf//2fHD16VOWBBrZz50717Tp69Gg5dOiQ+vbzTQgeGhh+3rJlS+nZs2dSY0HDSp06tWos+HPlypXlzz//TIIgAtKtWzfVyNauXSuzZ89W1+bMmVNOnDghFy5cCKsMZiPoJldohiIpfHu5WdGiu99M8W964oYNG9QXeO7cueWRRx6RJ554Qu6//351HcCwf/9+eeCBB1RbRrvHMBaQKFq0qMyZM0cwpQRI4HcwCL4JX9xXrlxR7TcxMVHSpk2rfn3+/HnVRuvUqaPyNdzca6+9Jlu2bJFMmTKpfggAAm7BIGg8A8YB/ahRo0ZqaA1jgvKH0/8AQdQFbhJ1xX/4UkDfh+n45Zdf1O/Qlx588EEZPHiwKrstTjBW7i8QBPFNgKBWqlRJCYAhcoYMGW5qOKGGw3nz5pVt27bJ999/r76t8K2GhICXKFFCpk2bdhMEEQgEEQlOE/fjE/dgjgZgBvxWr16tXCoS+qPxZ3yL4ht71KhR6ne33Xab4Jt8z549YZUhuv54811ucIVmKKIbBBFBAGr9+vXKtU2dOlV9ERvtCG5t5cqV8vvvvyv3hmErvogx4kD7whd3kSJF1Bc0RjrhJoyUME8IyGJUhS9zwBEuEQlf6L169ZLNmzcHhaC/mfDtR6hTOP0P9yAZn08//bSCHD6rVq2qTAZ4gITpAuiF/hZXCMba/QWCIH4O2sOeYxiKb6Vdu3YlfYMZ94WCIOwx7v3uu++UgHCYwRLg5xu8KVOmqPvxiQaJxoVvQ3xb49s0OQhiyA33aTTeHDlyqAaG4Xk4ZQi38YZzndNdocMh+KiIrAqis5ni35Qt2pKvuUVbrV69upq7g/vBdMu7776rnB9+PmjQIOWy0NbQD+CU0M4wjRNJQr+qVauW4MWMASB84RtTR4AgpoEAXgw777jjDvWJ5DscDgZB5BFO2/eHIKaSUDZ8oq49evRQfzcgiGkpTJPFDYJWuL9AEIQTxDcPqA8bj284OC98U/kmvEHDN6AxbPB/O2xAEENk2H4EEkMIfKPmz59f7rrrrhvyCwbBe+65R9lvBAHfyk2bNo0Igmjg4ZQhkgYc7rVOdYVmKBIHJ3hKRDBuhD35ezL5xmSm+Ddlho5eunRpNZ2SKlUqNerAS5K9e/dKly5d1FAWYMKUTt26ddWw0VgFAaeEOW/Ml2H+OpLkD0H0DXzRo/9hSglDbHzCcb7xxhvy22+/KdBi3hvz9nCsgGEwCGJkFE7bDwZBuNE//vhDPQ8GCaNElAdaALCY5jKmryKpf6Brb5gTtNL9GQXAfAEmTjNnzqwcFCrWunVrZfNTpkyp/o4g+KcPP/xQfSMCdhhCwDL7LpExIIhPzE8YFhrPQSPCt2qw4Pk6QQQdDRQusFmzZqphRuIE4QjDKUMsAphcHk50haAIlkUhHnDr6dKlU0UHBOBw8LsgjfR/M//WiNZSRMajOPj3RERkoB8MYwrBH374Qc3lAWTogPiCxhc8ln5giIs5Qujy0EMPKUDhxYgBQbwIBDCNaZxI5PCHIO7FkPjjjz9W5cCLEsyxIxY//vijmprCHB9GRhjdvPjiiyEhiDzDafvBIAhHDMeH8qLfYf70zTffVFXF8jqYEpgdlBumyWxKgqDV7s9sQXl/5Ao4yRUaEITDxxeLsRzEIRCEuEdEJMd1lS/5wHA0pvCML8HIoxDbO2ASAIjHHnssthl7ODcFwcyZM29t3bp1uTFjxuCbkEkjBTp27HhlwoQJfyQmJua1s1qACBzGRx99pBbI4wUW3kT6QhBvQTEUwrRI9uzZ1XINvNSy8eVwooh8JCIt7YYgRiNYQgJHiCViTLFTgE4wdlo6LicnOkG8OQfoMG2BiW4DgoAMpiw2btyohoeYwsCaS7yxj8OcYHJOUI0WRQRO8JLdEHRc49KoQHGfE9RIO8dWxclzgoAgnN7dd9+tXgQY6zux+BeT3lu3blW64hrM+5w5cwaf8ZwTNOA31CfAMZ0TdGzD8WjBkl0szflB97YGJ7k/XxWNOUFAEC4Qi3SxIwIvpPBiBJPgWBaBZUoGBPHyBLsH4gBBvB3Gmxq8HfaFn1EFQtC9XSJkyQPuGInHm+KQpeMFYSvgRPcXDIJHjhxRw14skcIbSOxCwHAYb0Pxxg9Lk7B6AGvo4jAcriEiK4OITQiG3RLdd2HIbXN0haLWGnbs2FF1VqyjwgLSWJ5iYbbZONX9BYMgfodlEliiga2GeGmCnRHYOoWhMNaC4cUI1sLFAYKhQuAoCMIxIxmLnEMV3vf30Brr+PBiChr7b0IINy/sI8b6PexzDjdhm+rDDz+s1gBiGQyW4zghhYQgCul1VwhXgjeZWDyNNY6Yz8JnLNYomWkETnd//hCMtq6E4I3KYQExnDO+kKNJmH7AWlakeEIQwMTaR+xYOXXq1E0HpURTl1jcExYEjQfZ7QqxpQcNAItHkfD2EItL8Y0SaHkFzjyDozDOPsM9Bw8eVPfCifz8889qZTz2aWJeKtSJNthrefvtt6tFm/67WmIRkHDzcIP7IwTDjWZk1/kuNA50Ggt2WGDO1egrL7zwgtql8sorryTtf0/udCbM2b788stqTzHOOnz77beVezt37pwgD0xX4HQZuHUcuBCJE8QuD0AQfQ0QxD5mJ6SIIGi3KwSwcNgCTpjAft5//vOfat0Z3jAGWl4RCoI4/ufTTz9VW+tCnWiD57Zp00atXTOOzIp3EN3k/uKtjYXPc9Rw2B+CyZ3GgvaMY+JwghJghj6CN/DYD+x7CIi/E8S2VOzYwlD3q6++Uru5cB92bGDXCHZp4GUVdpNgvWckEMT+X5yjaCw3wvIoJ6SIIWi3K8SK+ebNmytoYb3Zl19+qU7jCLS8AvuQgzlB1MdoVMFOtAGAcWbapEmTpGHDhrbEzm3uzxaRrHmooyHo24Z9T2PBtA0OYoCLw7Y8nNuHFAiCgCXeyOPoKiPhFCUsZcI5ntjlg5NekKKZE7QmNOZzjRqCdrlCnDSDt4aAIICIgyWxjzLQ8grsM8ZeS6MB+A+HfRsQ/hzoRBtAEC9H4Brjnej+4q34Tc9zDQR9T2PBWZpotxja4jQabFcMBkEMcQFBDFX95xsxJIbpME52IQT92kg85woxIYyjwkFvbMTHiRt4axtoeQWcIub5MIeHOb/nnntOfasZc4L+TjDQiTY4zwxv1DAUjmei+4un2gGf5UoIYu4Npy/hYBK4OeOcTl8n6H8607333qsOSsC0D/oXDnsA+LBtD290cd4m3u5iOGzMCWIEBXDCmGDIi8NQMFWFhBeI6Jvop05Nppygb6Xi+QYZR/5gbsMYxqIcgZZXAF44/gc7EXAwJQKCM9SSgyDWrgU60QYwxTAYDSAecxl0f47qMq6EIBSsUaOGOg0JR9MbyReC/qczAVpY/oU3yHCGeLGCpS3oGxhqA4z/+Mc/FOzgBjEniMNO0T9wJiiOvAcg0U8w/4e30JiXxxyjU1PMIGhU0GpXiG8cnPcHsXGcvY6J7s9xUXUUBB2njssLFHMIQg+rXCFO0MChjXgJ8swzz7hc+puLT/fn2JASgo4NjfmCWQLBeLlC89V3Tg50f86JRTIlIQQdHR5zhbMUgla6QnPVds7ddH/OiUWQkhCCrghTdIW0HIJ0hYEDQ/cXXaO14S5C0AbR4/XIuEGQrvB/IaX7i1fzjtlzCMGYSem8jOIKQbpCwQLvkwkJCduOHDlS03nNgSUKoAAhqHHTsAWCXnSFdH+u7kWEoKvDF7zwtkHQS66Q7s/1PYgQdH0IA1fAdgjq7Arp/rTpOYSgNqG8uSKOgKCOrpDuT6teQwhqFc4bK+MoCOrgCun+tOwthKCWYf27Uo6DoJtdId2ftj2FENQ2tA6GoJtcId2fxj3k76oRghqH2LFO0Fdzq0+mMRNfuj8z6rnmXkLQNaGKvKCugKATXSHdX+SNzcV3EIIuDl6oorsGgk6aK6T7C9WstPs9IahdSP9XIddB0E5XSPencU8IXrVrnq25Ryqewq31jOdcId2fW1sJy00FQivgWgjGwxXS/YVuQLyCCrhdAVdD0Mq5Qro/tzdtlp8KhKeAFhCMpSuk+wuv4fAqKqCLAtpAMBaukO5Pl2bNelCB8BXQDoLRuEK6v/AbDK+kAropoCUEI3GFdH+6NWnWhwpEpoDWEAzmCun+ImsovJoK6KqA9hBMzhXS/enanFkvKhC5Ap6B4HVpnsqYMeO7586de1lE5kcuF++gAlRANwW8BkHED9ugvFhv3dou60MFYqKAF2FACMak6TATKqCHAoSgHnFkLagAFYhSAUIwSuF4GxWgAnooQAjqEUfWggpQgSgVIASjFI63UQEqoIcChKAecWQtqAAViFIBQjBK4XgbFaACeihACOoRR9aCClCBKBUgBKMUjrdRASqghwKEoB5xZC2oABWIUgFCMErheBsVoAJ6KEAI6hFH1oIKUIEoFSAEoxSOt1EBKqCHAoSgHnFkLagAFYhSAUIwSuF4GxWgAnooQAjqEUfWggpQgSgVIASjFI63UQEqoIcCWkHw2rVrODDVdEqRIoVWupgWhBlQAY0V0KqzE4Iat1RWjQpYpAAhmIywdIIWtTZmSwUcqAAhSAg6sFmySFQgfgpoBcG+ffte2759uyxbtkwpePHiRSlYsKAsXLhQ7rvvvrBVpRMMWypeSAVcr4BWEDx16tS1AgUKyIoVK6R8+fIyduxYWbNmjSxatCiiQBGCEcnFi6mAqxXQCoJ4MTJ8+HDZtGmTzJ07VwoXLizLly+XUqVKyYIFC2TYsGEqWFmyZJGZM2dKnjx5ZOLEiTJ69GjBC2FcN3XqVMmWLZtWuri6hbLwVMBiBbTq7IDg+fPnFfzq1KmjhsOzZs2S48ePS7ly5WTnzp0AnILeoUOHlFPMlCmT/Prrr5I1a1YFzCpVqkiGDBm00sXiNsTsqYCrFdCqsxtLZMaNGyedO3eW/fv3S6FChWT9+vXSoEEDKVOmTNJcYYkSJWTatGnq5wBno0aN5PHHH5fcuXPDFWqli6tbKAtPBSxWQKvObkBw165dUqtWLTl8+LCSb+3atdKtWzdJSEi4SU6sr96wYYN6mTJ79mz1Wbp0aa10sbgNMXsq4GoFtOrsgSB47NgxNUTGXGHx4sVl5cqVkj9/fvWzxYsXS7169SR16tTSokULqVq1qjz//PNa6eLqFsrCUwGLFdCqsweCIDTEMpn+/ftLYmKiZM6cWebMmaMg2KVLF1myZAnmASVfvnzKDWbNmlUrXSxuQ8yeCrhaAa06O7fNubotsvBUwBYFCMFkZOeLEVvaIh9KBWxRQCsIhqkgTprxYr3DlIeXUQFvKeBFGBCC3mrjrC0VCKoAIcgGQgWogKcVIAQ9HX5WngpQAUKQbYAKUAFPK0AIejr8rDwVoAKEINsAFaACnlaAEPR0+Fl5KkAFCEG2ASpABTytgBcg+KiIfCIir4rIByJirBNsKSJjRaSxiKz0dCtg5amAhxXwAgQR3osickVELohIDhE5KiLpRCSNiKT1cPxZdSrgeQW8AsEeIjLwOvSMoF+6/rOhnm8FFIAKeFgBr0AQIYYLhPvzhaDv3z3cDFh1KuBdBbwEQV83SBfo3TbPmlOBGxTwEgR93SAgSBfIzkAFqIDnjpQy3OAAEeFcIDsAFaACnoNgahGZLCIvikgi408FqAAVwHAY6+YwxBhlAAANGElEQVSY9FbAa9MeekeTtYupAgqC+GcnmfRU4Po/oUwI6hle1ioGChCCMRDRyVkQgk6ODsvmBAUIQSdEwcIyEIIWisustVCAENQijIErQQhqHmBWz7QChKBpCZ2dASHo7PiwdPYrQAjaHwNLS0AIWiovM9dAAUJQgyAGqwIhqHmAWT3TChCCpiV0dgaEoLPjw9LZrwAhaH8MLC0BIWipvMxcAwUIQQ2CyOGw5kFk9SxVgBC0VF77M6cTtD8GLIGzFSAEnR0f06UjBE1LyAw0V4AQ1D3AKdS2Ye4d1jzOrF70ChCC0WvnijvpBF0RJhbSRgUIQRvFj8ejCcF4qMxnuFkBQtDN0Quj7IRgGCLxEk8rQAhqHn5CUPMAs3qmFSAETUvo7AwIQWfHh6WzXwFC0P4YWFoCQtBSeZm5BgoQghoEMVgVCEHNA8zqmVYgJAS3bNkir732mhw6dEhuueUWeeKJJ2TEiBGSLp35f7Y3S5YssmbNGmnfvr107txZnnrqKcmaNat89913kjt3bvnjjz8kV65c8sEHH8izzz6rKnv//fdL//79pVatWslWfvv27dKuXTvBp13Jv17NmjWLeVEOHjwolSpVkl9//TVo3oRgzKVnhpopEBKChQsXlr59+0rLli3l1KlT0qpVK+nYsaNUrlzZtBTI+4svvlDQ6tSpk9SoUUOqV6+uoPjkk0/KJ598ouD39NNPy+TJk+XixYuSPXt2BcfMmTM7FoLJ1cu0WH4ZEIKxVpT5eVWBkBCEM1u8eLE8/PDDN2k0aNAgmTVrlqRKlUrSpEkjU6ZMkXLlysmDDz4o3bt3l/r166t7GjRoIE2aNBF/RwRXBwi2bdtWQRD3DhgwQE6ePCljxoxRDhTpX//6l3z77beyfv166dq1qyQkJKhrXnzxRfn555/l/PnzCqQvvfSScoC+TvDNN9+Ujz76SF2Dck2dOlW52GXLlkmvXr3kypUrCqwTJ06UEiVKyLp166RPnz5y3333ybRp09TPxo0bp8qIZ7399tvSvHlzVa7evXvLypUr5fLly6rsqD/ccnL18hXvwIED8vzzz8uxY8fk0qVLSqe33npLXVKlShX1BTBv3jzZvXu3tGjRQj0fCWWGY8a/DojnbdiwgU7Qqz2X9Y6ZAiEh+M4776jOXqFCBXnkkUekadOmUrBgQVUADGXvvfdeyZgxo0yYMEHWrl2rOu/MmTPl448/lqVLl8rvv/8uFStWlB9++EGB0jfB2QFIAAF+h6EboNijRw8FOnR05FW1alUFBEDmxIkTMmrUKOnZs6d6LoB17tw5KVasmOzcuVPgkAwIrl69WoF027ZtkiFDBpk/f7489thjylEWLVpUNm7cKHfddZfMmTNHQRfXAYKPP/64gmXDhg2lVKlSAmc3adIklf8bb7whmzdvlhUrVsjo0aMVoFFu3PPcc8+pe5Krl2+9jx8/Lvv375cHHnhAXYuyA3AALiCYPn16ef/995XbzZs3rxw9elT++usvpTuge/fdd8unn34qr7zyCiEYs67AjLyqQEgIQhh0WsBp+fLlCm6ABtzdL7/8ojorOvSPP/4ot956qwIhoJYvXz7lyjCfl5iYqOARToJjy5Ejh4Jm2bJl5fDhw2oeEkNiQBBDZTgngBFuEM9EwnUAMJ5lQHDgwIHKAQ4fPvyGR8NRduvWTbZu3ap+DjcI8Jw5c0YwBwo3Chgi1axZU8GmXr16CsRwgfhE3jNmzJD8+fOr61CWDh06KHcaTpo7d64CGr4kNm3aJIsWLVJTDIAgno9PJEAQcIYecMH4MxKHw+GozGuoQGgFQkIQQ6/rk+sqt5EjR6phGDptgQIFVIetU6eOfPPNN4LhsQGPLl26KPcFaOJn6MzhJrhLDL/xguSzzz5TQ1BAdvbs2QoG2bJlU8AAyOrWrXtDtr7DYZQNQ9XBgwffcA3KA7cJ4BkQhCM9e/bsTRDEC5iXX35ZQXDPnj3KCeMTL2cAWOgRaZo+fboC6LvvvqscKeZBoR3A5w/BO++8U5UJQ2gM340yE4KRqs7rqUDyCgSFIIZqmBuDk4Ijwt/btGmj3NewYcOUY8O8FoaymAPctWtXEgQBsNKlSyt4YBgaSYLjwfAToAFMAbZHH31Uucuvv/5aZYXnwUXBaV64cEG5QLxE2bFjxw3DYbzEgePD0BkvWvDyBc4P8MGwtkiRIgJXhiE2huAApK8TDARBuGKUDXlj2IphOxyq4UyD1Rf3pU6dWmmIITZADncdDIJp06ZVZUX98OUDkPbr14/D4UgaFq+lAskoENIJYu4Lc4IY+qZMmVI5sPHjx6uXCXBi6LyFChVSLx0wrDOcIJ6FOa733nsvaWgXbgTgMjHcBmAwn4j5MLg/vKE2XhJg+IlhLyCC4TfeWgNeyb0Y+fDDDxX4ypcvr6AJh4pnACL4OfLGi5GSJUuGDUHUBfcDoMaLEbi7TJkyhazmvn371BAfL5QeeughBWO8GAkGQThCvKjBtALKj/sw58olMiHl5gVUIKgCISEYrX6Yu8IcmZ3r9aItu073cZ2gTtFkXaxQIOYQxFwVhoVwOXAueLnBZJ8ChKB92vPJ7lAg5hB0R7W9U0pC0DuxZk2jU4AQjE4319xFCLomVCyoTQoQgjYJH6/HEoLxUprPcasChKBbIxdmuQnBMIXiZZ5VICwI+i/gtVotLDXBljfsS45Vwo4SYwdKcnniZQ4WaONwhtOnT6udMNEmrI3E8h18RpMC6R1NGQnBaCLAe7ykACF4Pdo40ABr7wBLnJYzZMiQqNuBVRCMpoyEYNRh5I0eUSBsCGK3wldffaU287/wwgvqeC0kdDJs/8JiXxxmgDMBfdcH4u/YZ4sU6NQZ43fYG4zdF9iPi9Nr4ASxn9dYFG2cFoMtb0uWLFGLuK9evaoWK6M8OHEFf8f+YhzugC1/jRs3VkDDomssrC5TpozaC4yF174JBzIAgtiFAgjitJbPP/9cLaLGJxIOWcASIHxiYTb2VGPRNhYtFy9eXFatWqX2IPtCEFvxAumBPdc4nebPP/9UZUW+2KFiOEE4UyyqxiJunIaTXBlDtVNCMJRC/L3XFQgbgtgpgh0SGCpiOxw6Pj4NCAJU2FECGGF3CbZ1YTsbdpJg7y72Fwc6dQZ7kVu3bq0OB8CBpK+//roCAyAIsGJXBIbIeDaGyY0aNRLsusDWM5zwgj+jfLgHW98AFmwvwzY/PLN27dpqmBtsOAyQ4hgswAgJ6xxDQRC7ZVBPnAaD/6APnuULwWB64FBUuDvsdtm7d68CPvZNGxDEVkCUCV8ySMmVMVQDJgRDKcTfe12BsCHoe7IJHBc2/ePoKHQyAxwQE6e7YDsdYICE/b842WXo0KEBT53BVjA4JpxYjeQ7J+ifnxEwAA7b9wA7wA9wRDngzHDsFwBjAAnbzELNCSbXEEJBEPdAFySccgPQ49MXgoH0gCvGoQ1wnSifbzKO08IRYTjxxvcAi0gbLCEYqWK83msKRAVBHCeFYRsOLPCHIDowhqvG8feAoHGSS6BTZ+CgAEocKOAPQeSHYS8OUPBNGM7CNeKwBRzFjwMGDBjDgeKAAwyZceoKDnbAOYTBnGBygYfbxd5nfCL5D4d9IYgvBtQZn74QDKSHsQcYoIOj9Ycg6oOTc3AwAw6xiDYRgtEqx/u8okDYEMShoTj92XBUGMJintAfgjjuCUNPHEoKGMGRocNjvi3QqTOAFYa9ABaGfzi6Cvcaw+H//ve/agse3B+uxcnLcHsYZgM8OMQAR1wZThAHEsAF4nAElBEuEf9WSc6cOZVTxFA3nPTll1+q+UUcEwaQwvlWq1YtaU4wHAgG0gMnx/gOh3/66Sd1crXvIQqA4zPPPKOG+Lfddls4Rb7pGkIwKtl4k4cUCBuCeGHx/fffKzjBfQFUSP4QxLwd5gcBDUAJwMKkPlKgU2dwHfID4NDZAS4cz+X7YgQnysBR4igvOEcczwUowwXi2H4cT4V8jhw5ouYXcf4e5igBG+PMPxy/j1NuAE6cCh0qwZ0ap9lgzhHHbwHExouRcCAYTA+8GMEhrPhiQdnxcgknX/sukYF2OJ0HJ09HMywmBENFmb/3ugJhQdDrIrm5/oSgm6PHssdDAUIwHirb+AxC0Ebx+WhXKEAIuiJM0ReSEIxeO97pDQUIQc3jTAhqHmBWz7QChKBpCZ2dASHo7PiwdPYrQAjaHwNLS0AIWiovM9dAAUJQgyAGqwIhqHmAWT3TChCCpiV0dgaEoLPjw9LZrwAhaH8MLC0BIWipvMxcAwUIQQ2CyOGw5kFk9SxVgBC0VF77M6cTtD8GLIGzFSAEnR0f06UjBE1LyAw0V4AQ1D3AKRBiUf9jogJU4GYFCEHNWwWdoOYBZvVMK0AImpbQ2RkQgs6OD0tnvwKEoP0xsLQEhKCl8jJzDRQgBDUIYrAqEIKaB5jVM62AgqDpXJiB0xXgixGnR4jls02B/wdDCDhoi5PTRwAAAABJRU5ErkJggg=="/>
+                    </section>
+                    <section>
+                        <h2>Pseudocode Example</h2>
+                        <pre><code class="hljs plaintext">
+ask for name
+if name is "Mr. Wegley":
+    say "Welcome!"
+    broadcast unlock
+else:
+    say "You're not invited..."
+                        </code></pre>
+                    </section>
+                </section>
+
+                <!-- End of presentation -->
+            </div>
+        </div>
+
+        <script src="https://tomocafe.github.io/reveal-teals/revealjs/js/reveal.js"></script>
+        <script src="https://tomocafe.github.io/reveal-teals/teals/js/teals.cdn.js"></script>
+    </body>
+</html>
+
