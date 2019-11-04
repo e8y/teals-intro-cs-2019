@@ -38,10 +38,71 @@ you have Internet connectivity.
                     </small>
                 </section>
 
-                <!-- DO NOW -->
+                <!-- LESSON -->
+                <section>
+                    <p>
+                        Our code is getter longer and more complex
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80">
+                </section>
+                <section id="fragments">
+                    <h2>We need to organize!</h2>
+                    <div class="fragment">
+                    <img src="https://images.unsplash.com/photo-1559394452-087c19c260ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80">
+                    <p>
+                        Not only because it's easier to read and understand...
+                    </p>
+                    <p class="fragment">
+                        Necessary to do some more interesting things with code!
+                    </p>
+                    </div>
+                </section>
+
+                <section id="fragments">
+                    <h2>Abstraction</h2>
+                    <p><em>Abstraction</em> &mdash; removing specifics that are not relevant in a given context</p>
+                    <p class="fragment">
+                        Instead of <q>if touching LeftPaddle or touching RightPaddle, set direction to –1 &times; direction</q>...
+                    </p>
+                    <p class="fragment">
+                        <q>if touching any paddle, bounce</q>
+                    </p>
+                </section>
+
+                <section id="fragments">
+                    <h2>Detail Removal</h2>
+                    <p><em>Detail removal</em> &mdash; reducing the complexity of an algorithm or process by focusing on the important parts</p>
+                    <p class="fragment">
+                        In our PB&amp;J algorithm, we could have used exact measurements (<q>put 3 oz. of PB on the knife</q>)...
+                    </p>
+                    <p class="fragment">
+                        But the algorithm works well enough by putting an inexact amount and repeating until spread well.
+                    </p>
+                </section>
+
+                <section id="fragments">
+                    <h2>Generalization</h2>
+                    <p><em>Generalization</em> &mdash; combining a group of related concepts or processes into a single category</p>
+                    <p class="fragment">
+                        Spreading PB exact same "code" as spreading jelly...
+                    </p>
+                    <p class="fragment">
+                        We could share the same code <b>generically</b> taking a condiment and spreading it!
+                    </p>
+                </section>
+
                 <section>
                     <section>
-                        <h2>Do Now</h2>
+                    <h2>Procedural Decomposition</h2>
+                        <p><em>Procedural decomposition</em> &mdash; <u>breaking a problem down into smaller subtasks</u>, usually to increase readability and/or maintainability, often by applying one of the above concepts</p>
+                    </section>
+                    <section data-background-iframe="https://snap.berkeley.edu/snap/snap.html#present:Username=mr_wegley&ProjectName=project2-chkpt1&editMode&noRun" data-background-interactive></section>
+                </section>
+
+                <!-- ACTIVITIVES -->
+                <section>
+                    <section>
+                        <h2>Activity</h2>
                         <p>
                             Reread the PB&amp;J algorithm we wrote at the beginning of the year.
                         </p>
@@ -51,20 +112,109 @@ you have Internet connectivity.
                             .container { display: flex; }
                             .col { flex: 1; }
                         </style>
-                        <div class="container" style="position:relative; height:600px; margin:0 auto; text-align:left">
+                        <div class="container" style="position:relative; height:600px; margin:0 auto; text-align:left; font-family:monospace; font-size: 50%;">
                             <div class="col">
-                                Get plate, knife, napkin, bag
-                                Get loaf of bread, peanut butter jar, jam jar
-
+                                <b><u>Peanut Butter &amp; Jelly Sandwich:</u></b>
+                                <ol style="list-style-type:lower-latin;">
+                                    <div style="color:darkgreen">
+                                    <li>Get plate, knife, napkin, bag; place onto table</li>
+                                    <li>Get bread bag, peanut butter jar, jelly jar; place onto table</li>
+                                    </div>
+                                    <div style="color:darkblue">
+                                    <li>Open the bag of bread</li>
+                                    <li>Take out 2 slices of bread, put them on the plate large side down</li>
+                                    <li>Close the bag of bread</li>
+                                    </div>
+                                    <div style="color:darkred">
+                                    <li>Open the jar of <u>peanut butter</u></li>
+                                    <li>Put the lid on the table</li>
+                                    <li>Take the knife and put it in the jar</li>
+                                    <li>Scoop some <u>peanut butter</u> onto it</li>
+                                    <li>Spread the <u>peanut butter</u> across the large side</li>
+                                    <li>Repeat the last 3 steps until evenly spread on the bread</li>
+                                    <li>Put the lid back onto the jar</li>
+                                    <li>Clean the knife with the napkin</li>
+                                    </div>
+                                </ol>
                             </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <div class="col">
-                                Column 2 Content
+                                <ol start="14" style="list-style-type:lower-latin;">
+                                    <div style="color:darkmagenta">
+                                    <li>Open the jar of <u>jelly</u></li>
+                                    <li>Put the lid on the table</li>
+                                    <li>Take the knife and put it in the jar</li>
+                                    <li>Scoop some <u>jelly</u> onto it</li>
+                                    <li>Spread the <u>jelly</u> across the large side of the other slice of bread</li>
+                                    <li>Repeat the last 3 steps until evenly spread on the bread</li>
+                                    <li>Put the lid back onto the jar</li>
+                                    <li>Clean the knife with the napkin</li>
+                                    </div>
+                                    <li>Place the slices of bread on top of each other so that both the peanut butter and jelly are touching</li>
+                                    <li>Open the bag</li>
+                                    <li>Slide the sandwich into the bag so that the large side of bread is parallel with the large side of the bag</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Activity</h2>
+                        <p>Start individually re-writing our PB&amp;J algorithms using the concepts we just discussed.</p>
+                        <p>Try to decompose into smaller subtasks and generalize!</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Lasagna</h2>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lasagna_%281%29.jpg/590px-Lasagna_%281%29.jpg">
+                    </section>
+                    <section data-background="#ffffff">
+                        <style>
+                            .container { display: flex; }
+                            .col { flex: 1; }
+                        </style>
+                        <div class="container" style="position:relative; height:600px; margin:0 auto; text-align:left; font-family:monospace; font-size: 50%;">
+                            <div class="col">
+                                <b><u>Lasagna:</u></b><br>
+                                <ol style="list-style-type:lower-latin;">
+                                    <li><em>Prepare materials</em></li>
+                                    <li><em>Cook pasta</em></li>
+                                    <li>Repeat 4 times:</li>
+                                    <ol style="list-style-type:none;">
+                                        <li><em>Build a layer</em></li>
+                                    </ol>
+                                    <li>Put dish into oven for 40 minutes, then take it out</li>
+                                </ol>
+                                <br><br>
+                                <em><u>Prepare materials:</u></em>
+                                <ol style="list-style-type:lower-latin;">
+                                    <li>Preheat oven to 375&deg;F</li>
+                                    <li>Bring salted water to boil in a pot</li>
+                                    <li>Get a baking dish</li>
+                                    <li>Get pasta, tomato sauce, cheese, cooked meat or veggies</li>
+                                </ol>
+                                <br><br>
+                                <em><u>Cook pasta:</u></em>
+                                <ol style="list-style-type:lower-latin;">
+                                    <li>Put pasta sheets into boiling water for 10 minutes</li>
+                                    <li>Drain the water</li>
+                                    <li>Rinse the cooked pasta with cool water</li>
+                                </ol>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="col">
+                                <em><u>Build a layer:</u></em>
+                                <ol style="list-style-type:lower-latin;">
+                                    <li>Spread tomato sauce evenly</li>
+                                    <li>Spread meat or veggie filling evenly</li>
+                                    <li>Cover with a pasta sheet</li>
+                                    <li>Spread cheese evenly</li>
+                                </ol>
                             </div>
                         </div>
                     </section>
                 </section>
-
-                <!-- LESSON -->
 
                 <!-- End of presentation -->
             </div>
