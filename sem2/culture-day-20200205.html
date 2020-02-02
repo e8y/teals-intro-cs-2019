@@ -4,12 +4,21 @@ and open it in a web browser, and it will render properly as long as
 you have Internet connectivity.
 -->
 <!doctype html>
+<!-- For flexbox -->
+<style>
+    .container {
+        display: flex;
+    }
+    .col {
+        flex: 1;
+    }
+</style>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Digital Logic</title>
+        <title>Digital Logic Circuits</title>
 
         <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reset.css">
         <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reveal.css">
@@ -32,7 +41,7 @@ you have Internet connectivity.
             <div class="slides">
                 <!-- TITLE SLIDE -->
                 <section>
-                    <h2>Digital Logic</h2>
+                    <h2>Digital Logic Circuits</h2>
                     <small>
                         Mr. Wegley &mdash; Wednesday, February 5, 2020
                     </small>
@@ -62,27 +71,89 @@ you have Internet connectivity.
                 <section>
                     <section>
                         <h2>Logic Gates: NOT</h2>
+                        <div class="container">
+                        <div class="col">
                         <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/49981" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+                        </div>
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>a</th><th>NOT a</th></tr>
+                        <tr><td>0</td><td contenteditable="true"></td></tr>
+                        <tr><td>1</td><td contenteditable="true"></td></tr>
+                        </table>
+                        </div>
+                        </div>
                     </section>
                     <section>
                         <h2>Logic Gates: AND</h2>
+                        <div class="container">
+                        <div class="col">
                         <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/49979" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+                        </div>
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>a</th><th>b</th><th>a AND b</th></tr>
+                        <tr><td>0</td><td>0</td><td contenteditable="true"></td></tr>
+                        <tr><td>0</td><td>1</td><td contenteditable="true"></td></tr>
+                        <tr><td>1</td><td>0</td><td contenteditable="true"></td></tr>
+                        <tr><td>1</td><td>1</td><td contenteditable="true"></td></tr>
+                        </table>
+                        </div>
+                        </div>
                     </section>
                     <section>
                         <h2>Logic Gates: OR</h2>
+                        <div class="container">
+                        <div class="col">
                         <iframe width="600px" height="400px" src="https://circuitverse.org/simulator/embed/49980" id="projectPreview" scrolling="no" webkitAllowFullScreen mozAllowFullScreen allowFullScreen></iframe>
+                        </div>
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>a</th><th>b</th><th>a OR b</th></tr>
+                        <tr><td>0</td><td>0</td><td contenteditable="true"></td></tr>
+                        <tr><td>0</td><td>1</td><td contenteditable="true"></td></tr>
+                        <tr><td>1</td><td>0</td><td contenteditable="true"></td></tr>
+                        <tr><td>1</td><td>1</td><td contenteditable="true"></td></tr>
+                        </table>
+                        </div>
+                        </div>
                     </section>
                 </section>
 
-                <section>
-                    <h2>Truth Tables</h2>
-                </section>
-
-                <section>
-                    <h2>Kahoot!</h2>
-                </section>
-
                 <!-- ACTIVITY -->
+                <section>
+                    <section id="fragments" data-background-image="https://paperpull.com/wp-content/uploads/2018/12/wallpaper-of-a-white-empty-room.jpg">
+                        <h2 style="color:#000000;">Activity</h2>
+                        <div style="color:#000000;">
+                        <p>Suppose we are in a big room with <u>three light switches</u></p>
+                        <p class="fragment">How do we make a circuit to control the lights?</p>
+                        </div>
+                    </section>
+                    <section data-background-iframe="https://circuitverse.org/simulator/embed/49987"></section>
+                    <section>
+                        <h2>Truth Table</h2>
+                        <div class="container">
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>A</th><th>B</th><th>C</th><th>light</th></tr>
+                        <tr><td>0</td><td>0</td><td>0</td><td contenteditable="true"></td></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        </table>
+                        </div>
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>A</th><th>B</th><th>C</th><th>light</th></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        <tr><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
+                        </table>
+                        </div>
+                        </div>
+                    </section>
+                </section>
                 
 
                 <!-- End of presentation -->
