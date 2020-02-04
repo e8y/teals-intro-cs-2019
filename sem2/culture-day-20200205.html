@@ -153,6 +153,44 @@ you have Internet connectivity.
                         </div>
                         </div>
                     </section>
+                    <section id="fragments">
+                        <h2>Truth Table</h2>
+                        <div class="container">
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>A</th><th>B</th><th>C</th><th>light</th></tr>
+                        <tr style="background-color:#00000022; color:#ffffff66"><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+                        <tr style="background-color:#00000022; color:#ffffff66"><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+                        <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                        </table>
+                        </div>
+                        <div class="col">
+                        <table style="text-align:center;">
+                        <tr><th>A</th><th>B</th><th>C</th><th>light</th></tr>
+                        <tr style="background-color:#00000022; color:#ffffff66"><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+                        <tr><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+                        <tr style="background-color:#00000022; color:#ffffff66"><td>0</td><td>1</td><td>1</td><td>0</td></tr>
+                        <tr><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+                        </table>
+                        </div>
+                        </div>
+                        <p>
+                            light = <span class="fragment">(A <span style="color:lightpink">and</span> <span style="text-decoration:overline">B</span> <span style="color:lightpink">and</span> <span style="text-decoration:overline">C</span>)</span>
+                            <span class="fragment"><span style="color:lightblue">or</span> (A <span style="color:lightpink">and</span> B <span style="color:lightpink">and</span> C)</span>
+                            <span class="fragment"></br><span style="color:lightblue">or</span> (<span style="text-decoration:overline">A</span> <span style="color:lightpink">and</span> <span style="text-decoration:overline">B</span> <span style="color:lightpink">and</span> C)</span>
+                            <span class="fragment"><span style="color:lightblue">or</span> (<span style="text-decoration:overline">A</span> <span style="color:lightpink">and</span> B <span style="color:lightpink">and</span> <span style="text-decoration:overline">C</span>)</span>
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            light = (A <span style="color:lightpink">and</span> <span style="text-decoration:overline">B</span> <span style="color:lightpink">and</span> <span style="text-decoration:overline">C</span>)
+                            <span style="color:lightblue">or</span> (A <span style="color:lightpink">and</span> B <span style="color:lightpink">and</span> C)
+                            </br><span style="color:lightblue">or</span> (<span style="text-decoration:overline">A</span> <span style="color:lightpink">and</span> <span style="text-decoration:overline">B</span> <span style="color:lightpink">and</span> C)
+                            <span style="color:lightblue">or</span> (<span style="text-decoration:overline">A</span> <span style="color:lightpink">and</span> B <span style="color:lightpink">and</span> <span style="text-decoration:overline">C</span>)
+                        </p>
+                        <iframe width="800px" height="500px" src="https://circuitverse.org/simulator/embed/49987"></iframe>
+                    </section>
                 </section>
                 
 
