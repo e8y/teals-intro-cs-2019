@@ -1,0 +1,109 @@
+<!--
+This is a standalone presentation. You can distribute this single file
+and open it in a web browser, and it will render properly as long as 
+you have Internet connectivity.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Functions</title>
+
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reset.css">
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reveal.css">
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/teals/css/theme/teals.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/highlightjs/src/styles/vs.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'https://tomocafe.github.io/reveal-teals/revealjs/css/print/pdf.css' : 'https://tomocafe.github.io/reveal-teals/revealjs/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- TITLE SLIDE -->
+                <section>
+                    <h2>Lab 3.2</h2>
+                    <small>
+                        Mr. Wegley &mdash; Wednesday, April 22, 2020
+                    </small>
+                </section>
+
+                <!-- LECTURE -->
+                <section>
+                    <h2>Part 1: Birthday Song</h2>
+                </section>
+
+                <section data-background-iframe="https://repl.it/@MrWegleyIntro/lab23-student1?lite=true"></section>
+
+                <section id="fragments">
+                    <h2>Part 2: Draw 5 Cards</h2>
+                    <p class="fragment">Picking a random list element</p>
+                    <p class="fragment">Number of arguments when calling the function</p>
+                </section>
+
+                <section>
+                    <section id="fragments">
+                        <h2>Random list element</h2>
+                        <pre><code class="hljs py">
+number = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+                        </code></pre>
+                        <p class="fragment">First element: <code>number[0]</code></p>
+                        <p class="fragment">Last element: <code>number[12]</code></p>
+                    </section>
+                    <section id="fragments">
+                        <h2>Random list element</h2>
+                        <pre><code class="hljs py">
+number = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+                        </code></pre>
+                        <p>Get random <emph>index</emph> from 0 to 12</p>
+                        <pre class="fragment"><code class="hljs py">
+import random
+index = random.randint(0, 12)
+                        </code></pre>
+                        <pre class="fragment"><code class="hljs py">
+number[index]
+                        </code></pre>
+                    </section>
+                </section>
+
+                <section id="fragments">
+                    <h2>Function Arguments</h2>
+                    <p>Arguments a.k.a. <q>inputs</q></p>
+                    <p class="fragment">Number of arguments in function definition <emph>must match</emph> the number of arguments in your function call.</p>
+                </section>
+
+                <section data-background-iframe="https://repl.it/@MrWegleyIntro/lab23-student2?lite=true"></section>
+
+
+                <!-- End of presentation -->
+            </div>
+        </div>
+
+        <script src="https://tomocafe.github.io/reveal-teals/revealjs/js/reveal.js"></script>
+        <!--
+        <script src="https://tomocafe.github.io/reveal-teals/teals/js/teals.cdn.js"></script>
+        -->
+        <script>
+Reveal.initialize({
+	dependencies: [
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/markdown/marked.js' },
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/markdown/markdown.js' },
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/notes/notes.js', async: true },
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/highlight/highlight.js', async: true }
+	],
+    width: 1200
+});
+        </script>
+    </body>
+</html>
+

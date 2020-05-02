@@ -1,0 +1,105 @@
+<!--
+This is a standalone presentation. You can distribute this single file
+and open it in a web browser, and it will render properly as long as 
+you have Internet connectivity.
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Return</title>
+
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reset.css">
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/revealjs/css/reveal.css">
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/teals/css/theme/teals.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="https://tomocafe.github.io/reveal-teals/highlightjs/src/styles/vs.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'https://tomocafe.github.io/reveal-teals/revealjs/css/print/pdf.css' : 'https://tomocafe.github.io/reveal-teals/revealjs/css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <!-- TITLE SLIDE -->
+                <section>
+                    <h2>Return</h2>
+                    <small>
+                        Mr. Wegley &mdash; Monday, May 4, 2020
+                    </small>
+                </section>
+
+                <!-- LECTURE -->
+                <section id="fragments">
+                    <h2>Recap</h2>
+                    <p>Defining our own functions</p>
+                    <p class="fragment">Scope of variables (global vs. local)</p>
+                    <p class="fragment"><b>Today:</b> functions that return values</p>
+                </section>
+
+                <section>
+                    <section id="fragments">
+                        <h2>Snap<em>!</em> Flashback</h2>
+                        <p>Python functions &harr; Snap custom blocks</p>
+                        <p class="fragment">Python functions that return values &harr; Snap <em>reporters</em></p>
+                    </section>
+                    <section data-background-iframe="https://snap.berkeley.edu/snap/snap.html#present:Username=mr_wegley&ProjectName=reporter&editMode&noRun"></section>
+                </section>
+
+                <section>
+                    <section id="fragments">
+                        <h2>Returning in Python</h2>
+                        <p>Return a value using the <code>return</code> keyword</p>
+                        <p class="fragment">Returning ends the function</p>
+                        <p class="fragment">You can return any type: integer, string, list, ...</p>
+                        <p class="fragment">Or you can return <em>nothing!</em></p>
+                    </section>
+                    <section data-background-iframe="https://repl.it/@MrWegleyIntro/return?lite=true"></section>
+                    <section data-background-iframe="https://repl.it/@MrWegleyIntro/return2?lite=true"></section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Lab 3.3</h2>
+                        <p>Just like our Snap<em>!</em> program to generate random sentences</p>
+                    </section>
+                    <section data-background-iframe="https://repl.it/teacher/assignments/4874450/preview?lite=true"></section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Picking a random item from a list</h2>
+                    </section>
+                    <section data-background-iframe="https://repl.it/@MrWegleyIntro/random?lite=true"></section>
+                </section>
+                <!-- End of presentation -->
+            </div>
+        </div>
+
+        <script src="https://tomocafe.github.io/reveal-teals/revealjs/js/reveal.js"></script>
+        <!--
+        <script src="https://tomocafe.github.io/reveal-teals/teals/js/teals.cdn.js"></script>
+        -->
+        <script>
+Reveal.initialize({
+	dependencies: [
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/markdown/marked.js' },
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/markdown/markdown.js' },
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/notes/notes.js', async: true },
+		{ src: 'https://tomocafe.github.io/reveal-teals/revealjs/plugin/highlight/highlight.js', async: true }
+	],
+    width: 1200
+});
+        </script>
+    </body>
+</html>
+
